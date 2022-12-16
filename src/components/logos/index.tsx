@@ -1,3 +1,5 @@
+import classNames from 'classnames'
+import { useState } from 'react'
 import { getAssetUrl } from '../../utils/tools'
 import './style.scss'
 
@@ -5,14 +7,39 @@ type LogoProps = {
   path: string
   alt: string
   className?: string
+  link?: string
 }
 
 const Logo = (props: LogoProps) => {
+  const [isHovered, setHover] = useState(false)
+
+  const onClickHandler = () => {
+    if (props.link) {
+      window.open(props.link)
+    }
+  }
+  const mouseEnterHandler = () => {
+    setHover(true)
+  }
+  const mouseLeaveHandler = () => {
+    setHover(false)
+  }
+
+  const path = getAssetUrl(`${props.path + (isHovered ? '-hover' : '')}.svg`)
+  console.log(`${props.path + (isHovered ? '-hover' : '')}.svg`)
+  const className = classNames(
+    'img',
+    { img__link: props.link },
+    props.className
+  )
   return (
     <img
-      src={getAssetUrl(props.path)}
+      onMouseEnter={mouseEnterHandler}
+      onMouseLeave={mouseLeaveHandler}
+      src={path}
       alt={props.alt}
-      className={`img${props.className ? ' ' + props.className : ''}`}
+      className={className}
+      onClick={onClickHandler}
     />
   )
 }
