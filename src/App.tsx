@@ -10,11 +10,14 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <div className="App__name">
-        <Name />
+      <div className="App__body">
+        <div className="App__name">
+          <Name />
+        </div>
+        <div className="App__info">
+          <Info />
+        </div>
       </div>
-      <Info />
-      <div className="App__body">toda la parte del texto 1 </div>
     </div>
   )
 }

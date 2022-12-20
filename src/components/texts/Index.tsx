@@ -1,7 +1,8 @@
 import { getAssetUrl } from '../../utils/tools'
-import Project from '../img'
+import Project from '../project'
 import Logo from '../logos'
 import './style.scss'
+import Carousel from '../../carousel'
 
 export type Projectvevo = {
   name: string
@@ -136,11 +137,7 @@ const Info = () => {
         <h4 className="texts__projects" id="Project_2">
           Projects
         </h4>
-        {projects.map((p) => (
-          <p key={p.name} className="carucel">
-            <Project name={p.name} project={p} />
-          </p>
-        ))}
+        <Carousel projects={projects} />
       </div>
     </div>
   )
