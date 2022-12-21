@@ -10,20 +10,49 @@ type CarouselProps = {
 
 const Carousel = (props: CarouselProps) => {
   const [activeSlide, setActiveSlide] = useState(0)
+  const [isHovered, setHover] = useState(false)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveSlide(
-        activeSlide === props.projects.length - 1 ? 0 : activeSlide + 1
-      )
+      if (!isHovered) {
+        setActiveSlide(
+          activeSlide === props.projects.length - 1 ? 0 : activeSlide + 1
+        )
+      }
     }, 3000)
     return () => clearInterval(interval)
-  }, [activeSlide])
+  }, [activeSlide, isHovered])
+
+  const mouseEnterHandler = () => {
+    setHover(true)
+  }
+  const mouseLeaveHandler = () => {
+    setHover(false)
+  }
+  const onChance = (scenario: 'next' | 'prev') => {
+    const lastItemIndex = props.projects.length - 1
+    const nextItem = activeSlide === lastItemIndex ? 0 : activeSlide + 1
+    const prevItem = activeSlide === 0 ? lastItemIndex : activeSlide - 1
+    setActiveSlide(scenario === 'next' ? nextItem : prevItem)
+  }
 
   return (
-    <div className="carousel">
+    <div
+      className="carousel"
+      onMouseEnter={mouseEnterHandler}
+      onMouseLeave={mouseLeaveHandler}
+    >
+      <span className="carousel__button" onClick={() => onChance('prev')}>
+        {'<'}
+      </span>
+      <span
+        className="carousel__button carousel__button-next"
+        onClick={() => onChance('next')}
+      >
+        {'>'}
+      </span>
       {props.projects.map((p, i) => (
-        <p
+        <div
           style={{ transform: `translate(-${activeSlide * 100}%)` }}
           key={p.name}
           className={classNames('carousel__item', `carousel__item-${i}`, {
@@ -31,7 +60,7 @@ const Carousel = (props: CarouselProps) => {
           })}
         >
           <Project name={p.name} project={p} />
-        </p>
+        </div>
       ))}
     </div>
   )

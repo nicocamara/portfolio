@@ -26,7 +26,6 @@ const Logo = (props: LogoProps) => {
   }
 
   const path = getAssetUrl(`${props.path + (isHovered ? '-hover' : '')}.svg`)
-  console.log(`${props.path + (isHovered ? '-hover' : '')}.svg`)
   const className = classNames(
     'img',
     { img__link: props.link },

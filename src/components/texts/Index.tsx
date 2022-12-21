@@ -30,7 +30,7 @@ const projects: Projectvevo[] = [
   },
   {
     name: ' Movies / Oct. 2021 - Nov. 2021 / Frontend Developer.',
-    imgUrl: getAssetUrl('movies.png'),
+    imgUrl: getAssetUrl('movie-app.png'),
     repoUrl: 'https://github.com/Nico-app/Nico-movies',
     projectUrl: 'https://movies-nico.netlify.app',
     skills: [
@@ -45,7 +45,7 @@ const projects: Projectvevo[] = [
   },
   {
     name: ' Calculator - App / sept. 2021 - oct. 2021 / Frontend Developer.',
-    imgUrl: getAssetUrl('Calculator.png'),
+    imgUrl: getAssetUrl('calculator.png'),
     repoUrl: 'https://github.com/Nico-app/Calculadora',
     projectUrl: 'https://calc-nico.netlify.app/',
     skills: ['Javascript', 'Typescript', 'Css'],
@@ -54,7 +54,7 @@ const projects: Projectvevo[] = [
 const Info = () => {
   return (
     <div className="texts">
-      <div>
+      <div className="texts__first">
         <h1 id="Abaut_Me" className="texts__title">
           About Me
         </h1>
@@ -134,7 +134,7 @@ const Info = () => {
         />
       </div>
       <div>
-        <h4 className="texts__projects" id="Project_2">
+        <h4 className="texts__name" id="Project_2">
           Projects
         </h4>
         <Carousel projects={projects} />

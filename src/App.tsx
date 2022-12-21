@@ -6,7 +6,7 @@ import './style.scss'
 
 const App = () => {
   const cahmuyin = getAssetUrl('github-black.svg')
-  console.log(cahmuyin)
+
   return (
     <div className="App">
       <Navbar />

@@ -5,6 +5,8 @@
   height: 100%;
 
   &__body {
+    background-color: #111114;
+
     /* SMARTPHONES  */
     @media only screen and (min-width: 480px) {
       max-width: 100%;
