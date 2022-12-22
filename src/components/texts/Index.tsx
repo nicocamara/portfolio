@@ -1,60 +1,16 @@
-import { getAssetUrl } from '../../utils/tools'
-import Project from '../project'
+// import { projects } from '../../utils/data'
 import Logo from '../logos'
 import './style.scss'
 import Carousel from '../../carousel'
+import { ProjectInstance } from '../../utils/data'
 
-export type Projectvevo = {
-  name: string
-  imgUrl: string
-  repoUrl: string
-  projectUrl: string
-  skills: string[]
-  description?: string[]
+type InfoProps = {
+  projects: ProjectInstance[]
 }
-
-const projects: Projectvevo[] = [
-  {
-    name: 'Rick and Morty / Nov. 2021 - dic. 2021 / Frontend Developer.',
-    imgUrl: getAssetUrl('rick.png'),
-    repoUrl: 'https://github.com/Nico-app/Rick-and-Morty',
-    projectUrl: 'https://rickandmorty-project.netlify.app/',
-    skills: [
-      'Javascript',
-      'Typescript',
-      'Css',
-      'Api Request',
-      'Filters',
-      'Pagination',
-    ],
-  },
-  {
-    name: ' Movies / Oct. 2021 - Nov. 2021 / Frontend Developer.',
-    imgUrl: getAssetUrl('movie-app.png'),
-    repoUrl: 'https://github.com/Nico-app/Nico-movies',
-    projectUrl: 'https://movies-nico.netlify.app',
-    skills: [
-      'Javascript',
-      'Typescript',
-      'Css',
-      'Api Request',
-      'Filters',
-      'Search input',
-      'Infinite-Scroll',
-    ],
-  },
-  {
-    name: ' Calculator - App / sept. 2021 - oct. 2021 / Frontend Developer.',
-    imgUrl: getAssetUrl('calculator.png'),
-    repoUrl: 'https://github.com/Nico-app/Calculadora',
-    projectUrl: 'https://calc-nico.netlify.app/',
-    skills: ['Javascript', 'Typescript', 'Css'],
-  },
-]
-const Info = () => {
+const Info = (props: InfoProps) => {
   return (
     <div className="texts">
-      <div className="texts__first">
+      <div className="texts__conteiners">
         <h1 id="Abaut_Me" className="texts__title">
           About Me
         </h1>
@@ -105,7 +61,7 @@ const Info = () => {
           link="https://www.linkedin.com/in/nicolas-camara/"
         />
       </div>
-      <div>
+      <div className="texts__conteiners">
         <h3 className="texts__title" id="Experiences">
           Experiences
         </h3>
@@ -133,11 +89,11 @@ const Info = () => {
           link="https://elchamuyin.onrender.com/"
         />
       </div>
-      <div>
-        <h4 className="texts__name" id="Project_2">
+      <div className="texts__conteiners">
+        <h4 className="texts__title" id="Project_2">
           Projects
         </h4>
-        <Carousel projects={projects} />
+        <Carousel projects={props.projects} />
       </div>
     </div>
   )

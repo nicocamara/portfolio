@@ -1,10 +1,11 @@
+import { ProjectInstance } from '../../utils/data'
 import Logo from '../logos'
-import { Projectvevo } from '../texts/Index'
+
 import './style.scss'
 
 type ProjectProps = {
   name: string
-  project: Projectvevo
+  project: ProjectInstance
 }
 
 const Project = (props: ProjectProps) => {

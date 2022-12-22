@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import { useEffect, useState } from 'react'
 import Project from '../components/project'
-import { Projectvevo } from '../components/texts/Index'
+import { ProjectInstance } from '../utils/data'
+
 import './style.scss'
 
 type CarouselProps = {
-  projects: Projectvevo[]
+  projects: ProjectInstance[]
 }
 
 const Carousel = (props: CarouselProps) => {
