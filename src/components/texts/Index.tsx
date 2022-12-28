@@ -1,8 +1,9 @@
-// import { projects } from '../../utils/data'
 import Logo from '../logos'
 import './style.scss'
 import Carousel from '../../carousel'
 import { ProjectInstance } from '../../utils/data'
+import { getAssetUrl } from '../../utils/tools'
+import Experience from '../experiences/experiences'
 
 type InfoProps = {
   projects: ProjectInstance[]
@@ -61,34 +62,9 @@ const Info = (props: InfoProps) => {
           link="https://www.linkedin.com/in/nicolas-camara/"
         />
       </div>
-      <div className="texts__conteiners">
-        <h3 className="texts__title" id="Experiences">
-          Experiences
-        </h3>
-        <p className="texts__name">E-Comerce</p>
-        <p className="texts__text">
-          joined an agile team simulation that develops an e-commers(shop +
-          checkout) web application that follows the latets Ecmascript updates
-          and other code conventions such as Atomic Desin and BEM.
-        </p>
-        <p className="texts__subtitle">Skills Used</p>
-        <p className="texts__text2">
-          React / Routes / Hooks / Porducts-API / Async-Await / Flexbox /
-          Responsive / Firebase / Web-Pack / Typescript / BEM
-        </p>
-        <Logo
-          path="github"
-          alt="github"
-          className="gatito"
-          link="https://github.com/Maxioliva/Ecommerce101"
-        />
-        <Logo
-          path="eye-solid"
-          alt="github"
-          className="ojito"
-          link="https://elchamuyin.onrender.com/"
-        />
-      </div>
+
+      <Experience />
+
       <div className="texts__conteiners">
         <h4 className="texts__title" id="Project_2">
           Projects

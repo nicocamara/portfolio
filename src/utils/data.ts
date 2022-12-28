@@ -47,3 +47,60 @@ export const projects = [
     skills: ['Javascript', 'Typescript', 'Css'],
   },
 ]
+
+export type Skill = {
+  name: string
+  imgUrl: string
+  repoUrl: string
+}
+
+export const skills: Skill[] = [
+  {
+    name: 'Routes',
+    imgUrl: getAssetUrl('rutes.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/App.tsx',
+  },
+  {
+    name: 'Formik',
+    imgUrl: getAssetUrl('formik.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/components/atoms/profileSettings/index.tsx',
+  },
+  {
+    name: 'Context',
+    imgUrl: getAssetUrl('context.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/StateContext.tsx',
+  },
+  {
+    name: 'Firebase',
+    imgUrl: getAssetUrl('firebase.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/firebaseApp.ts',
+  },
+  {
+    name: 'Typescript',
+    imgUrl: getAssetUrl('typescript.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/Type.tsx',
+  },
+  {
+    name: 'Responsive',
+    imgUrl: getAssetUrl('responsive.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/_variables.scss',
+  },
+  {
+    name: 'Porducts-API',
+    imgUrl: getAssetUrl('products.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/httpClient.ts',
+  },
+  {
+    name: 'BEM-Example',
+    imgUrl: getAssetUrl('bem.png'),
+    repoUrl:
+      'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/components/organism/navbar/style.scss',
+  },
+]

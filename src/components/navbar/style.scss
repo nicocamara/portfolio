@@ -1,3 +1,5 @@
+@import '../../utils/variables';
+
 .navbar {
   border-radius: 16px;
   background: rgb(17 17 20);
@@ -12,9 +14,13 @@
   border: outset;
   transition: right 0.5s;
   z-index: 9;
+  width: 210px;
 
   &__hidden {
-    right: -18%;
+    right: -20%;
+    @media (max-width: $mobile) {
+      right: -50%;
+    }
   }
 
   &__button {
