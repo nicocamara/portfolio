@@ -21,7 +21,7 @@ const Experience = () => {
       <h3 className="texts__title" id="Experiences">
         Experiences
       </h3>
-      <p className="texts__name">E-Comerce</p>
+      <p className="texts__name">E-Commerce</p>
       <p className="texts__text">
         joined an agile team simulation that develops an e-commers(shop +
         checkout) web application that follows the latets Ecmascript updates and

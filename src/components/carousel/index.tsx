@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import { useEffect, useState } from 'react'
-import Project from '../components/project'
-import { ProjectInstance } from '../utils/data'
+import Project from '../project'
+import { ProjectInstance } from '../../utils/data'
 
 import './style.scss'
 

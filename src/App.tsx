@@ -29,9 +29,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <div className="App__body">
-        <div className="App__name">
-          <Name />
-        </div>
+        <div className="App__name">{/* <Name /> */}</div>
         <div className="App__info">
           <Info projects={projects} />
         </div>

@@ -1,6 +1,7 @@
 .texts {
   color: white;
   font-family: Book Antiqua;
+  width: 100%;
 
   &__title {
     font-size: 30px;
@@ -24,6 +25,9 @@
     text-align: initial;
     letter-spacing: 1px;
   }
+  &__img {
+    width: 200px;
+  }
 
   &__subtitle {
     text-align: left;
@@ -38,6 +42,7 @@
   }
 
   &__conteiners {
+    width: 100%;
     background-color: #111114;
     margin: 30px auto;
     padding: 15px;
@@ -49,6 +54,18 @@
 
   &__projectstitle {
     font-size: 20px;
+  }
+
+  &__skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__carouselprofile {
+    display: flex;
+    margin: 120px 250px;
+    position: absolute;
   }
 }
 
