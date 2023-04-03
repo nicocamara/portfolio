@@ -20,7 +20,7 @@ const Info = (props: InfoProps) => {
           <p className="texts__text">
             My name is Nicolas Camara, I am 30 years old and I was born in
             Cordoba - Argentina. At the beginning of my twenties, I started my
-            working career in the Physical Education field, until obtaining my
+            working career in the Physical Education field, a until obtaining my
             Bachelor’s and Master’s degree. During covid-19 season, I started
             self-taught to study software development, and after 4 months, I
             decided to fully commit to it. Today with one year and half of
