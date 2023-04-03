@@ -8,7 +8,7 @@
   color: white;
   font-weight: bold;
   position: fixed;
-  right: 15px;
+  right: 15px; /* Ocultar el Navbar por defecto */
   top: 200px;
   padding: 5px 10px 10px;
   border: outset;
@@ -17,9 +17,14 @@
   width: 210px;
 
   &__hidden {
-    right: -20%;
+    right: -10%; /* Desplazar el Navbar hacia la derecha */
+
+    @media (max-width: $tablet) {
+      right: -19%; /* Ajustar para tablet */
+    }
+
     @media (max-width: $mobile) {
-      right: -50%;
+      right: -19%; /* Ajustar para móvil */
     }
   }
 
@@ -44,6 +49,7 @@
     list-style: none;
     display: inline-block;
   }
+
   &__li::after {
     content: '';
     width: 0px;

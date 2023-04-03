@@ -25,7 +25,7 @@ const Info = (props: InfoProps) => {
             self-taught to study software development, and after 4 months, I
             decided to fully commit to it. Today with one year and half of
             experience doing personal side projects I am specialized in frontend
-            development using the following stacks (JavaScript + Typescript +
+            development using the following stacksz (JavaScript + Typescript +
             React).
             <p className="texts__subtitle">Interests</p>
             <p className="texts__text2">
