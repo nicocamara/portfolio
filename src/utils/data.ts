@@ -63,7 +63,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'Formik',
-    imgUrl: getAssetUrl('formik.png'),
+    imgUrl: getAssetUrl('register.png'),
     repoUrl:
       'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/components/atoms/profileSettings/index.tsx',
   },
@@ -87,13 +87,13 @@ export const skills: Skill[] = [
   },
   {
     name: 'Responsive',
-    imgUrl: getAssetUrl('responsive.png'),
+    imgUrl: getAssetUrl('responsive2.png'),
     repoUrl:
       'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/_variables.scss',
   },
   {
     name: 'Porducts-API',
-    imgUrl: getAssetUrl('products.png'),
+    imgUrl: getAssetUrl('product2.png'),
     repoUrl:
       'https://github.com/Maxioliva/Ecommerce101/blob/develop/src/client/utils/httpClient.ts',
   },

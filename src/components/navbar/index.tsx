@@ -28,11 +28,6 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navbar__li">
-            <a href="#Skills" className="navbar__a">
-              Skills
-            </a>
-          </li>
-          <li className="navbar__li">
             <a href="#Experiences" className="navbar__a">
               Experiences
             </a>
