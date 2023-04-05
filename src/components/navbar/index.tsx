@@ -18,7 +18,6 @@ const Navbar = () => {
         className={'navbar__button'}
         onClick={onCLickHandler}
       />
-
       <div>
         <div className="navbar__title">PORTFOLIO</div>
         <div className="navbar__subcontainer">
@@ -54,7 +53,7 @@ const Navbar = () => {
               path="menssage"
               alt="menssage"
               className="navbar__menssage"
-              link="https://www.linkedin.com/in/nicolas-camara/"
+              link="mailto:nicocamara92@gmail.com"
             />
           </div>
         </div>
