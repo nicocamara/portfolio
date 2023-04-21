@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { getAssetUrl } from '../../utils/tools'
 import Logo from '../logos'
 import './style.scss'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -22,19 +23,19 @@ const Navbar = () => {
         <div className="navbar__title">PORTFOLIO</div>
         <div className="navbar__subcontainer">
           <li className="navbar__li">
-            <a href="#Abaut_Me" className="navbar__a">
+            <Link to="/" className="navbar__a">
               About me
-            </a>
+            </Link>
           </li>
           <li className="navbar__li">
-            <a href="#Experiences" className="navbar__a">
+            <Link to="experience" className="navbar__a">
               Experiences
-            </a>
+            </Link>
           </li>
           <li className="navbar__li">
-            <a href="#Project_2" className="navbar__a">
+            <Link to="/carousel" className="navbar__a">
               Projects
-            </a>
+            </Link>
           </li>
           <div className="navbar__logos">
             <Logo

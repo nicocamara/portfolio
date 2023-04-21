@@ -38,31 +38,36 @@ const Carousel = (props: CarouselProps) => {
   }
 
   return (
-    <div
-      className="carousel"
-      onMouseEnter={mouseEnterHandler}
-      onMouseLeave={mouseLeaveHandler}
-    >
-      <span className="carousel__button" onClick={() => onChance('prev')}>
-        {'<'}
-      </span>
-      <span
-        className="carousel__button carousel__button-next"
-        onClick={() => onChance('next')}
+    <div className="texts__conteiners">
+      <h4 className="texts__title" id="Project_2">
+        Projects
+      </h4>
+      <div
+        className="carousel"
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
       >
-        {'>'}
-      </span>
-      {props.projects.map((p, i) => (
-        <div
-          style={{ transform: `translate(-${activeSlide * 100}%)` }}
-          key={p.name}
-          className={classNames('carousel__item', `carousel__item-${i}`, {
-            'carousel__item--active': i === activeSlide,
-          })}
+        <span className="carousel__button" onClick={() => onChance('prev')}>
+          {'<'}
+        </span>
+        <span
+          className="carousel__button carousel__button-next"
+          onClick={() => onChance('next')}
         >
-          <Project name={p.name} project={p} />
-        </div>
-      ))}
+          {'>'}
+        </span>
+        {props.projects.map((p, i) => (
+          <div
+            style={{ transform: `translate(-${activeSlide * 100}%)` }}
+            key={p.name}
+            className={classNames('carousel__item', `carousel__item-${i}`, {
+              'carousel__item--active': i === activeSlide,
+            })}
+          >
+            <Project name={p.name} project={p} />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

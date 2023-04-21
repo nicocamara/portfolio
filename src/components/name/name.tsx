@@ -1,8 +1,8 @@
 import './style.scss'
 const Name = () => {
   return (
-    <main className="container">
-      <p>Hello 👋 I'm</p>
+    <div className="contenedor">
+      <h4 className="p">Hello 👋 I'm</h4>
       <section className="animation">
         <div className="first">
           <div>Nicolas Camara</div>
@@ -14,7 +14,7 @@ const Name = () => {
           <div>30 years old</div>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 
