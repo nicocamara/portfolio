@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: none;
 
     /* SMARTPHONES  */
     @media only screen and (min-width: 480px) {
@@ -20,7 +21,6 @@
     /* TABLET LANDSCAPE / DESKTOP */
     @media only screen and (min-width: 1024px) {
       max-width: 100%;
-      margin: 0 auto;
     }
   }
 

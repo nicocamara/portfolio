@@ -38,7 +38,7 @@ const Experience = () => {
           path="eye-solid"
           alt="github"
           className="ojito"
-          link="https://elchamuyin.onrender.com/"
+          link="https://anyma-shop.onrender.com/"
         />
       </div>
       <p className="subcontainer__subtitle">Tech Stack</p>
