@@ -50,6 +50,16 @@
     box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.97);
     -webkit-box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.97);
     -moz-box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.97);
+
+    @media only screen and (min-width: 480px) {
+      max-width: 100%;
+      background-color: black;
+    }
+
+    /* TABLETS */
+    @media only screen and (min-width: 768px) {
+      max-width: 60%;
+    }
   }
 
   &__projectstitle {

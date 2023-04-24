@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Experience from './components/experiences/experiences'
 import Carousel from './components/carousel'
+import Footer from './components/footer'
 
 const App = () => {
   const [projects, setProjects] = useState<ProjectInstance[]>([])
@@ -28,7 +29,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <div className="App__body">
-        <div>
+        <div className="App-name">
           <Name />
         </div>
         <div className="App__info">
@@ -42,6 +43,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
