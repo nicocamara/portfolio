@@ -10,6 +10,9 @@
   padding: 20px;
   font-family: Book Antiqua;
   letter-spacing: 1px;
+  @media only screen and (max-width: 520px) {
+    font-size: 9px;
+  }
 }
 
 .contact {

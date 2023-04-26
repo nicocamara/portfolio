@@ -31,12 +31,12 @@ const AboutMe = () => {
               and a medieval films/series fanatic.
             </div>
           </div>
-          <div className="texts__carouselprofile">
-            <CarouselPerfil />
-          </div>
         </div>
 
         <div className="texts__skills">
+          <div className="texts__carouselprofile">
+            <CarouselPerfil />
+          </div>
           <div className="texts__text">
             <p className="texts__subtitle">Tech-Skills</p>
             <p className="texts__text2">
@@ -53,15 +53,6 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-
-      {/* <Experience />
-
-      <div className="texts__conteiners">
-        <h4 className="texts__title" id="Project_2">
-          Projects
-        </h4>
-        <Carousel projects={props.projects} />
-      </div> */}
     </div>
   )
 }
